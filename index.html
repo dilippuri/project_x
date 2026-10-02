@@ -18,7 +18,8 @@
             <div class="logo"><strong>Business</strong>Showcase</div>
             <nav>
                 <a href="#catalog">Catalog</a>
-                <a href="#inquiry" class="btn">Inquire Now</a>
+                <!-- Open Direct WhatsApp Chat -->
+                <a href="https://wa.me/919460793983?text=Hi!%20I'd%20like%20to%20inquire%20about%20your%20services." target="_blank" class="btn">Chat on WhatsApp</a>
             </nav>
         </div>
     </header>
@@ -27,7 +28,7 @@
     <section class="hero">
         <div class="container">
             <h1>Innovative Products for Modern Needs</h1>
-            <p>Explore our premium product catalog below and reach out directly for custom orders and pricing.</p>
+            <p>Explore our premium product catalog below and reach out directly via WhatsApp for custom orders and pricing.</p>
             <a href="#catalog" class="btn btn-large">View Catalog</a>
         </div>
     </section>
@@ -45,7 +46,8 @@
                         <span class="category">Category A</span>
                         <h3>Premium Product Enterprise</h3>
                         <p>High-efficiency component built to industrial standards. Highly durable and customizable.</p>
-                        <a href="#inquiry" class="btn-secondary" onclick="selectProduct('Premium Product Enterprise')">Request Quote</a>
+                        <!-- Dynamic WhatsApp link with pre-filled text -->
+                        <a href="https://wa.me/919460793983?text=Hi!%20I%20am%20interested%20in%20getting%20a%20quote%20for%20the%20Premium%20Product%20Enterprise." target="_blank" class="btn-secondary">Request Quote via WhatsApp</a>
                     </div>
                 </div>
 
@@ -56,7 +58,8 @@
                         <span class="category">Category B</span>
                         <h3>Advanced Hardware Module</h3>
                         <p>Integrated processing capabilities with built-in telemetry. Designed for plug-and-play setups.</p>
-                        <a href="#inquiry" class="btn-secondary" onclick="selectProduct('Advanced Hardware Module')">Request Quote</a>
+                        <!-- Dynamic WhatsApp link with pre-filled text -->
+                        <a href="https://wa.me/919460793983?text=Hi!%20I%20am%20interested%20in%20getting%20a%20quote%20for%20the%20Advanced%20Hardware%20Module." target="_blank" class="btn-secondary">Request Quote via WhatsApp</a>
                     </div>
                 </div>
 
@@ -67,44 +70,12 @@
                         <span class="category">Category C</span>
                         <h3>Secure Interface Adapter</h3>
                         <p>Hardware-level secure communications module featuring real-time encryption filters.</p>
-                        <a href="#inquiry" class="btn-secondary" onclick="selectProduct('Secure Interface Adapter')">Request Quote</a>
+                        <!-- Dynamic WhatsApp link with pre-filled text -->
+                        <a href="https://wa.me/919460793983?text=Hi!%20I%20am%20interested%20in%20getting%20a%20quote%20for%20the%20Secure%20Interface%20Adapter." target="_blank" class="btn-secondary">Request Quote via WhatsApp</a>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </section>
-
-    <!-- Dummy Inquiry Form Section -->
-    <section id="inquiry" class="inquiry-section">
-        <div class="container form-container">
-            <h2 class="section-title">Business Inquiry Form</h2>
-            <p style="text-align: center; margin-bottom: 2rem; color: #64748b;">Have questions or want to place a dummy order? Fill out the fields and try out the button.</p>
-            
-            <!-- Using Javascript to intercept submit and show a popup -->
-            <form onsubmit="handleDummySubmit(event)">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" placeholder="John Doe" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Business Email</label>
-                    <input type="email" id="email" placeholder="john@company.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="product">Product of Interest</label>
-                    <input type="text" id="product" placeholder="e.g. Advanced Hardware Module">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Your Inquiry Details</label>
-                    <textarea id="message" rows="5" placeholder="Specify quantities, customizations, or general questions..." required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-submit">Submit Inquiry (Demo)</button>
-            </form>
         </div>
     </section>
 
@@ -115,21 +86,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Product Auto-fill & Dummy Form Submission Alert -->
-    <script>
-        function selectProduct(productName) {
-            document.getElementById('product').value = productName;
-            document.getElementById('message').focus();
-        }
-
-        function handleDummySubmit(event) {
-            event.preventDefault(); // Prevents page reload
-            
-            const name = document.getElementById('name').value;
-            const product = document.getElementById('product').value || "General Catalog";
-
-            alert(`🎉 Thank you, ${name}!\n\nThis is a dummy demo form. In the live version, this inquiry for "${product}" would be securely routed directly to your business email.`);
-        }
-    </script>
-</body>
-</html>
+    <!-- 🟢 FLOATING WHATSAPP BUTTON (Bottom Right Corner) -->
+    <a href="https://wa.me/919460793983?text=Hello!%20I%20visited%20your%20website%20and%20had%20a%20few%20questions." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path d="M12.031 2c-
